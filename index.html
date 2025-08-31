@@ -22,13 +22,44 @@
     </ul>
   </nav>
 
-  <h1>Cuestionario</h1> 
-<label for="Cuestionario">
-<span><strong>Nombre Completo</strong></span><input type="text" id="Nombre Completo"> 
 </label>
-       <data value=""></data>
-       ola mundox2
-       preubaaaaaa
+
+<h2>📩 Contáctanos</h2>
+
+  <form>
+    <!-- Nombre -->
+    <label for="nombre">Nombre Completo:</label>
+    <input type="text" id="nombre" name="nombre" 
+           pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" 
+           title="Solo se permiten letras y espacios"
+           minlength="3" maxlength="50" required>
+
+    <!-- Correo -->
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" id="correo" name="correo" 
+           placeholder="ejemplo@correo.com"
+           required>
+
+    <!-- Teléfono -->
+    <label for="telefono">Número de Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" 
+           pattern="[0-9]{7,10}" 
+           title="Debe contener entre 7 y 10 dígitos"
+           required>
+
+    <!-- Mensaje -->
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" 
+              minlength="10" maxlength="200" 
+              placeholder="Escribe tu mensaje aquí..." 
+              required></textarea>
+
+    <!-- Botón -->
+    <button type="submit">Enviar</button>
+  </form>
+       
+       
+       
     
 </body>
 </html>
